@@ -1,8 +1,8 @@
 // MARQUEE
 document.addEventListener('DOMContentLoaded', () => {
   const marquee = document.querySelector('.marquee__inner');
-  const content = marquee.innerHTML;
-  marquee.innerHTML = content + content + content + content;
+  // duplicate so it scrolls continuously
+  marquee.innerHTML += marquee.innerHTML + marquee.innerHTML + marquee.innerHTML;
 
   let offset = 0;
   function loop() {
@@ -11,11 +11,4 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(loop);
   }
   loop();
-
-  // MOBILE NAV TOGGLE
-  const hamb = document.getElementById('hamburger');
-  const nav  = document.getElementById('main-nav');
-  hamb.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
 });
