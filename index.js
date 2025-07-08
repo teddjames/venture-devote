@@ -11,4 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(loop);
   }
   loop();
+
+  // MOBILE NAV TOGGLE
+  const hamb = document.getElementById('hamburger');
+  const nav  = document.getElementById('main-nav');
+  hamb.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
 });
