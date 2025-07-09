@@ -103,23 +103,40 @@ body, html {
   padding: 6rem 0 4rem;
   color: #f5e8d3;
 }
+
 .journey-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   align-items: center;
 }
+
 .section-journey h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
+
 .journey-col img {
   width: 100%;
   max-width: 300px;
   border-radius: 8px;
   display: block;
   margin: auto;
+}
+
+/* Spacing inside the text block column */
+.journey-col.text-block h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.journey-col.text-block p {
+  margin-bottom: 1.5rem;
+}
+
+.journey-col.text-block .btn {
+  margin-top: 1.5rem;
 }
 
 /* PROJECTS */
